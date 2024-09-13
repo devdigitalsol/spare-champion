@@ -1,1 +1,353 @@
-/* You can add global styles to this file, and also import other style files */
+//animation css
+
+.d-2 {
+  animation-delay: 0.2s;
+}
+.d-4 {
+  animation-delay: 0.4s;
+}
+.d-6 {
+  animation-delay: 0.6s;
+}
+.d-8 {
+  animation-delay: 0.8s;
+}
+.d-10 {
+  animation-delay: 1s;
+}
+.d-12 {
+  animation-delay: 1.2s;
+}
+.d-14 {
+  animation-delay: 1.4s;
+}
+.d-16 {
+  animation-delay: 1.6s;
+}
+.d-18 {
+  animation-delay: 1.8s;
+}
+.d-20 {
+  animation-delay: 2s;
+}
+.d-22 {
+  animation-delay: 2.2s;
+}
+.d-24 {
+  animation-delay: 2.4s;
+}
+.d-26 {
+  animation-delay: 2.6s;
+}
+.d-28 {
+  animation-delay: 2.8s;
+}
+.d-30 {
+  animation-delay: 3s;
+}
+.d-32 {
+  animation-delay: 3.2s;
+}
+.d-34 {
+  animation-delay: 3.4s;
+}
+.d-36 {
+  animation-delay: 3.6s;
+}
+.d-38 {
+  animation-delay: 3.8s;
+}
+.d-40 {
+  animation-delay: 4s;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  opacity: 0;
+  animation-name: zoomIn;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.fadeInDown {
+  opacity: 0;
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  opacity: 0;
+  animation-name: fadeInLeft;
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.fadeInRight {
+  opacity: 0;
+  animation-name: fadeInRight;
+}
+@keyframes fadeInRight {
+  from {
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.zoomInUp {
+  opacity: 0;
+  animation-name: zoomInUp;
+}
+@keyframes zoomInUp {
+  from {
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+} /*# sourceMappingURL=animation.css.map */
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('./assets/fonts/GothamRounded-Bold.woff2') format('woff2'),
+        url('./assets/fonts/GothamRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Gotham Rounded';
+}
+
+.screen {
+  width: 1024px;
+  height: 768px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+.screen-1 {
+    overflow: hidden;
+    background: url('./assets/images/bg.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.screen-2 {
+    background: url('./assets/images/bg.png') no-repeat center;
+    background-size: cover;
+    position: relative;  
+}
+
+.screen-3 {
+  background: url('./assets/images/bg5.png') no-repeat center;
+  background-size: cover;
+  position: relative;  
+}
+
+.screen-6 {
+  background: url('./assets/images/bg6.png') no-repeat center;
+  background-size: cover;
+  position: relative;  
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+.screen-1-text-1 {
+    position: relative;
+    height: 608px;
+}
+.screen-3-text-1 {
+  position: relative;
+  height: 585px;
+  top:35px;
+}
+
+
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    cursor: pointer;
+    bottom: 4px;
+    height: auto !important;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.btn2 {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  z-index: 999;
+  transform: translateY(-50%);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding:8px 7px;
+    font-size: 18px;
+    background: url(../src/assets/images/bg4.png);
+    border: 0;
+    outline: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    background-size: contain;
+}
+
+.screen-6 .screen-1-text-1 {
+  top:50px;
+}
+  
+  .error {
+    color:red;
+    padding:5px 0 0 0px;
+    display: block;
+    font-size: 16px;
+    display: none; 
+  }
+  .form {
+    position: absolute;
+    width: 100%;
+    top:18%;
+    left: -5px;
+  }
+  .form h4 {
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+  .screen-2-text-1  {
+    position: relative;
+    z-index: 9999;
+    width: 49%;
+  }
+  .screen-2-text-1:before {
+    content: "";
+    background: url(./assets/images/bg3.png);
+    background-size: cover;
+    width: 652px;
+    height: 490px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -9;
+  }
+  .screen-2-text-1  label {
+    display: inline-block;
+    color: #fff;
+    width: 130px;
+    font-size: 18px;
+  }
+
+  .screen-3 .btn {
+    bottom:20px;
+  }
+
+  #Register {
+    outline: none;
+    border: 0;
+    margin: 30px auto 0 auto;
+    display: block;
+    height: 55px;
+
+  }
+
+  #pledge {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    z-index: 999;
+    top: 67%;
+    left: 4%;
+    border:2px solid #641244;
+  }
+

@@ -1,0 +1,32 @@
+<div class="screen-2 screen">
+    <div class="screen-2-text-1">
+        <form #regForm="ngForm" (ngSubmit)="register(regForm.value)" class="form">
+            <h4>LOGIN</h4>
+            <div class="form-group">
+                <label for="">Name :</label>
+            <input type="text" class="form-control" name="dname" ngModel #dname="ngModel"> 
+            <span *ngIf="!dname.valid">
+                Enter Doctor Name
+            </span>
+            </div><br>
+        
+            <div class="form-group">
+                <label for="">Hospital :</label>
+                <input type="text" class="form-control" name="hname" ngModel #hname="ngModel"> 
+            <span  *ngIf="!hname.valid">Enter Hospital Name</span>
+            </div><br>
+        
+            <div class="form-group">
+                <label for="">HQ :</label>
+                <input type="text" class="form-control" name="hqname" ngModel #hqname="ngModel"> 
+            <span  *ngIf="!hqname.valid">Enter HQ Name</span>
+            </div><br>
+        
+            
+        
+            <button type="submit" class="" id="Register"  value="register">
+                <img src="../../assets/images/button2.png"></button> 
+        </form>
+    </div>
+  </div>
+  
